@@ -36,6 +36,9 @@ from sklearn.metrics import roc_auc_score
 
 from paddle import fluid
 
+from os import path
+sys.path.append( path.dirname( path.dirname( path.dirname( path.dirname( path.dirname( path.dirname( path.abspath(__file__) ) ) ) ) ) ) )
+
 from pahelix.utils.splitters import \
     RandomSplitter, IndexSplitter, ScaffoldSplitter, RandomScaffoldSplitter
 from pahelix.datasets import *
